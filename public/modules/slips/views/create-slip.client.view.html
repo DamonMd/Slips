@@ -1,0 +1,33 @@
+<section data-ng-controller="SlipsController">
+	<div class="page-header text-center">
+		<h2>Create a New Slip</h3>
+	</div>
+	<div class="col-md-12">
+		<form class="form-horizontal" data-ng-submit="create()" novalidate>
+			<fieldset>
+				<div class="form-group">
+					<label class="control-label" for="title">Title</label>
+					<input class="form-control"type="text" id="title" data-ng-model="title" placeholder="Title" required>
+				</div>
+				<div class="form-group">
+					<label for="category" class="control-label">Category</label>
+					<input type="text" data-ng-model="category" id="category" class="form-control" placeholder="js, front/back-end, etc">
+				</div>
+				<div class="form-group">
+					<label for="issue" class="control-label">Issue</label>
+					<textarea name="issue" data-ng-model="issue" id="issue" class="form-control" placeholder="question or topic"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="solution" class="control-label">Solution</label>
+					<textarea name="solution" data-ng-model="solution" id="solution" class="form-control" placeholder="answer"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary">
+				</div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+			</fieldset>
+
+	</div>
+</section>
