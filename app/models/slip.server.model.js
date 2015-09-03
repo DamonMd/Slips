@@ -7,7 +7,7 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 function validateLength (slip){
-	return slip.length <= 15;
+	return slip.length <= 20;
 }
 /**
  * Slip Schema
