@@ -12,17 +12,23 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="category">Category</label>
-                    <div class="controls">
-                        <textarea name="issue" data-ng-model="slip.issue" id="description" class="form-control" cols="30" rows="10" placeholder="issue" required></textarea>
-                    </div>
-                </div>
+        					<label for="category" class="control-label">Category</label>
+        					<input type="text" data-ng-model="slip.category" id="category" class="form-control" placeholder="js, front/back-end, etc">
+        				</div>
+        				<div class="form-group">
+        					<label for="issue" class="control-label">Issue</label>
+        					<textarea name="issue" data-ng-model="slip.issue" id="issue" class="form-control" placeholder="question or topic"></textarea>
+        				</div>
+        				<div class="form-group">
+        					<label for="solution" class="control-label">Solution</label>
+        					<textarea name="solution" data-ng-model="slip.solution" id="solution" class="form-control" placeholder="answer"></textarea>
+        				</div>
                 <div class="form-group">
                     <input type="submit" value="Update" class="btn btn-default">
                 </div>
-				<div data-ng-show="error" class="text-danger">
-					<strong data-ng-bind="error"></strong>
-				</div>
+				        <div data-ng-show="error" class="text-danger">
+					        <strong data-ng-bind="error"></strong>
+				        </div>
             </fieldset>
         </form>
     </div>
